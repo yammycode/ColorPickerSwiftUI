@@ -12,6 +12,8 @@ struct ContentView: View {
     @State private var green = Double.random(in: 0...255)
     @State private var blue = Double.random(in: 0...255)
 
+    @FocusState private var focusedField: Bool
+
     var body: some View {
         ZStack {
             Color(.systemIndigo).ignoresSafeArea()
@@ -22,10 +24,14 @@ struct ContentView: View {
                     .overlay(
                         RoundedRectangle(cornerRadius: 20).stroke(Color.white, lineWidth: 3)
                     )
-                    .padding(.bottom, 16)
-                ColorSwitcherView(colorValue: $red, color: .red)
-                ColorSwitcherView(colorValue: $green, color: .green)
-                ColorSwitcherView(colorValue: $blue, color: .blue)
+                    .padding(.bottom)
+                ColorSwitcherView(colorValue: $red, focusedField: _focusedField, color: .red)
+                ColorSwitcherView(colorValue: $green, focusedField: _focusedField, color: .green)
+                ColorSwitcherView(colorValue: $blue, focusedField: _focusedField, color: .blue)
+            }
+            .focused($focusedField)
+            .onTapGesture {
+                focusedField = false
             }
             .padding()
         }
