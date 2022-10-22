@@ -11,6 +11,8 @@
 		C83561F829031EFE0028560F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83561F729031EFE0028560F /* ContentView.swift */; };
 		C83561FA29031EFF0028560F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C83561F929031EFF0028560F /* Assets.xcassets */; };
 		C83561FD29031EFF0028560F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C83561FC29031EFF0028560F /* Preview Assets.xcassets */; };
+		C8356204290325EF0028560F /* ColorSwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8356203290325EF0028560F /* ColorSwitcherView.swift */; };
+		C8E952362903E80B00BEA245 /* ColorTFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E952352903E80B00BEA245 /* ColorTFView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		C83561F729031EFE0028560F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C83561F929031EFF0028560F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C83561FC29031EFF0028560F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C8356203290325EF0028560F /* ColorSwitcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSwitcherView.swift; sourceTree = "<group>"; };
+		C8E952352903E80B00BEA245 /* ColorTFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTFView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +55,12 @@
 		C83561F429031EFE0028560F /* ColorPickerSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				C8356203290325EF0028560F /* ColorSwitcherView.swift */,
 				C83561F529031EFE0028560F /* ColorPickerSwiftUIApp.swift */,
 				C83561F729031EFE0028560F /* ContentView.swift */,
 				C83561F929031EFF0028560F /* Assets.xcassets */,
 				C83561FB29031EFF0028560F /* Preview Content */,
+				C8E952352903E80B00BEA245 /* ColorTFView.swift */,
 			);
 			path = ColorPickerSwiftUI;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E952362903E80B00BEA245 /* ColorTFView.swift in Sources */,
+				C8356204290325EF0028560F /* ColorSwitcherView.swift in Sources */,
 				C83561F829031EFE0028560F /* ContentView.swift in Sources */,
 				C83561F629031EFE0028560F /* ColorPickerSwiftUIApp.swift in Sources */,
 			);
